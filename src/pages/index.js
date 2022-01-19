@@ -11,8 +11,8 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <h1 className="hero__title">eBC</h1>
+        <p className="hero__subtitle">Electronic Bank Confirmation Platform</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -29,7 +29,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={"Electronic Bank Confirmation"}
+      title={"eBC"}
       description="">
       <HomepageHeader />
       <main>
