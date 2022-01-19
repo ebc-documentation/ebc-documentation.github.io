@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'eBC',
-  tagline: 'Electronic Bank Confirmation Platform',
-  url: 'https://ebc-docs.github.io',
+  title: 'Electronic Bank Confirmation Platform',
+  tagline: 'eBC',
+  url: 'https://ebc-documentation.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'ebc-documentation', // Usually your GitHub org/user name.
-  projectName: 'ebc-docs', // Usually your repo name.
+  projectName: 'ebc-documentation.github.io', // Usually your repo name.
 
   // scripts: [
   //   'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js',
@@ -63,7 +63,7 @@ const config = {
             label: 'Documentation',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/ebc-documentation/ebc-documentation.github.io',
             label: 'GitHub',
             position: 'right',
           },
@@ -101,10 +101,6 @@ const config = {
           // {
           //   title: 'More',
           //   items: [
-          //     {
-          //       label: 'Blog',
-          //       to: '/blog',
-          //     },
           //     {
           //       label: 'GitHub',
           //       href: 'https://github.com/facebook/docusaurus',
