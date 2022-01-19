@@ -15,14 +15,9 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'ebc-documentation', // Usually your GitHub org/user name.
   projectName: 'ebc-documentation.github.io', // Usually your repo name.
-  staticDirectories:['public', 'static'],
-  deploymentBranch:'gh-pages',
+  staticDirectories: ['public', 'static'],
+  deploymentBranch: 'gh-pages',
   trailingSlash: false,
-
-  // scripts: [
-  //   'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js',
-  //   '/js/custom.js',
-  // ],
 
   presets: [
     [
@@ -31,16 +26,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           remarkPlugins: [require('mdx-mermaid')],
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -61,7 +47,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'technical-overview',
             position: 'left',
             label: 'Documentation',
           },
@@ -80,36 +66,10 @@ const config = {
             items: [
               {
                 label: 'Documentation',
-                to: '/docs/intro',
+                to: '/docs/technical-overview',
               },
             ],
           },
-          // {
-          //   title: 'Community',
-          //   items: [
-          //     {
-          //       label: 'Stack Overflow',
-          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-          //     },
-          //     {
-          //       label: 'Discord',
-          //       href: 'https://discordapp.com/invite/docusaurus',
-          //     },
-          //     {
-          //       label: 'Twitter',
-          //       href: 'https://twitter.com/docusaurus',
-          //     },
-          //   ],
-          // },
-          // {
-          //   title: 'More',
-          //   items: [
-          //     {
-          //       label: 'GitHub',
-          //       href: 'https://github.com/facebook/docusaurus',
-          //     },
-          //   ],
-          // },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Blockfint`,
       },
