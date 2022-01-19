@@ -15,6 +15,9 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'ebc-documentation', // Usually your GitHub org/user name.
   projectName: 'ebc-documentation.github.io', // Usually your repo name.
+  staticDirectories:['public', 'static'],
+  deploymentBranch:'gh-pages',
+  trailingSlash: false,
 
   // scripts: [
   //   'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js',
