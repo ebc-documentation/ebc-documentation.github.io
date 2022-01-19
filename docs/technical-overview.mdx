@@ -5,8 +5,11 @@ sidebar_position: 2
 # Technical Overview
 
 import ZoomImageContainer from '../src/components/ZoomImageContainer';
-import Architecture from '@site/static/architecture/architecture.svg';
+import Architecture from '@site/static/img/architecture/architecture.png';
 
-<ZoomImageContainer>
-  <Architecture style={{width: "35rem", height: "35rem"}}/>
-</ZoomImageContainer>
+<div style={{ width: '35rem', height: '32rem' }}>
+  <ZoomImageContainer
+    alt={'System architecture diagram'}
+    img={Architecture}
+  ></ZoomImageContainer>
+</div>
