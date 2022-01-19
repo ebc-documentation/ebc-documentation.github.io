@@ -21,10 +21,12 @@ const StyledZoomIconContainer = styled.div`
   bottom: 0;
   right: -3rem;
   cursor: pointer;
+  visibility: ${(props) => (props.imgLoaded ? 'visible' : 'hidden')};
 `;
 
 export default function ZoomImageContainer({ img, alt = '' }) {
   const [isZoomed, setIsZoomed] = useState(false);
+  const [imgLoaded, setImgLoaded] = useState(false);
 
   const handleZoom = () => {
     setIsZoomed((prev) => {
@@ -36,15 +38,20 @@ export default function ZoomImageContainer({ img, alt = '' }) {
     setIsZoomed(shouldZoom);
   }, []);
 
+  const handleImgLoad = () => {
+    setImgLoaded(true);
+  };
+
   return (
     <StyledControlledZoomContainer>
       <ControlledZoom isZoomed={isZoomed} onZoomChange={handleZoomChange}>
-        <img alt={alt} src={img} />
+        <img alt={alt} src={img} onLoad={handleImgLoad} />
       </ControlledZoom>
       <StyledZoomIconContainer
         id="zoom-icon"
         isZoomed={isZoomed}
         onClick={handleZoom}
+        imgLoaded={imgLoaded}
       >
         <ZoomInIcon />
       </StyledZoomIconContainer>
