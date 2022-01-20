@@ -49,7 +49,7 @@ const config = {
             type: 'doc',
             docId: 'technical-overview',
             position: 'left',
-            label: 'Documentation',
+            label: 'Docs',
           },
           {
             href: 'https://github.com/ebc-documentation/ebc-documentation.github.io',
